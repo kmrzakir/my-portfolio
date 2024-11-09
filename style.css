@@ -1,0 +1,373 @@
+/* some default behaviour */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+    text-decoration: non;
+}
+
+/* body {
+    scroll-behavior: smooth;
+} */
+
+/* Here, define some global variables */
+:root {
+    --image-circle-color: #086489;
+    --nav-color: #020202;
+    --bg-color: #111111;
+    --text-and-btn-color: #75ffff;
+    --text-color: white;
+}
+
+html {
+    overflow-x: hidden;
+    background-color: var(--bg-color);
+}
+
+/* styleing navigation bar */
+header {
+    width: 100%;
+    background-color: var(--nav-color);
+    display: flex;
+    justify-content: space-between;
+    height: 56px;
+    align-items: center;
+    position: fixed;
+    z-index: 20;
+}
+
+.text-titlt {
+    color: white;
+    margin-left: 10%;
+    transition: 0.3s ease-in-out;
+}
+
+.text-titlt span {
+    color: var(--text-and-btn-color);
+}
+
+.text-titlt:hover {
+    transform: scale(1.2);
+}
+
+
+/* STYLE NAV INKS HERE */
+nav {
+    margin-right: 10%;
+}
+
+nav ul {
+    display: flex;
+}
+
+header nav ul li {
+    list-style-type: none;
+    margin-left: 30px;
+    transition: 0.3s ease-in-out;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li:hover {
+    transform: scale(1.2);
+}
+
+/* Put here hover effects on a tags */
+header nav ul li a:hover {
+    transform: scale(1.2);
+    color: var(--text-and-btn-color);
+}
+
+/* styleing main body from here */
+
+main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+main section {
+    width: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main section div {
+    width: 50%;
+}
+
+.left-section>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.my-name {
+    color: white;
+}
+
+.my-name span {
+    color: var(--text-and-btn-color);
+}
+
+.my-passion {
+    color: white;
+}
+
+.my-passion span {
+    color: var(--text-and-btn-color);
+}
+
+.my-description {
+    color: white;
+    margin: 10px 0px;
+    text-align: justify;
+    line-height: 2cap0px;
+}
+
+/* style social media icons here */
+.socialmedia-icons {
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.socialmedia-icons i {
+    font-size: 25px;
+    height: auto;
+    color: var(--text-and-btn-color);
+    border-radius: 50%;
+    border: 2px solid var(--text-and-btn-color);
+    padding: 5px;
+    transition: 0.3 ease-in-out;
+}
+
+.socialmedia-icons i:hover {
+    background-color: var(--text-and-btn-color);
+    color: white;
+    transform: scale(1.1);
+    margin: 10px;
+    box-shadow: 0 0 10px var(--text-and-btn-color),
+        0 0 20px var(--text-and-btn-color),
+        0 0 30px var(--text-and-btn-color);
+    border: none;
+}
+
+.contact-us-button {
+    border: none;
+    background-color: var(--text-and-btn-color);
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 20px;
+    box-shadow: 0 0 10px var(--text-and-btn-color);
+    transition: 0.3s ease-in-out;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.contact-us-button:hover {
+    box-shadow: 0 0 30px var(--text-and-btn-color),
+        0 0 40px var(--text-and-btn-color);
+}
+
+.image-div {
+    width: 400px;
+    height: 400px;
+    background-color: var(--image-circle-color);
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px var(--text-and-btn-color);
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+    border: 4px solid yellow;
+}
+
+.image-div:hover {
+    box-shadow: 0 0 50px var(--text-and-btn-color);
+}
+
+.image-div img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+/* STYLING ABOUT SECTION HERE */
+#about-section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.left-div {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin-right: 40px;
+}
+
+.left-div h1,
+.left-div h6 {
+    color: white;
+}
+
+.left-div h1 span {
+    color: var(--text-and-btn-color);
+}
+
+.left-div h4 span {
+    color: var(--text-and-btn-color);
+}
+
+.left-div h6 {
+    text-align: justify;
+    margin: 20px 0px;
+}
+
+.left-div button {
+    border: none;
+    background-color: var(--text-and-btn-color);
+    padding: 10px 30px;
+    font-weight: bold;
+    border-radius: 20px;
+    box-shadow: 0 0 10px var(--text-and-btn-color);
+    transition: 0.3s ease-in-out;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.left-div button:hover {
+    box-shadow: 0 0 30px var(--text-and-btn-color),
+        0 0 40px var(--text-and-btn-color);
+}
+
+#about-section .right-div-about {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right-div-about .image-div-about {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: var(--image-circle-color);
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 10px var(--text-and-btn-color);
+    transition: 0.3s ease-in-out;
+    border: 4px solid yellow;
+}
+
+.image-div-about:hover {
+    /* box-shadow: 0 0 20px var(--text-and-btn-color),
+    0 0 40px var(--text-and-btn-color),
+    0 0 50px var(--text-and-btn-color); */
+    box-shadow: 0 0 50px var(--text-and-btn-color);
+}
+
+.image-div-about img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.left-div h4 {
+    color: var(--text-and-btn-color);
+    margin-top: 10px;
+}
+
+/* STYLING SERVICES SECTION */
+
+#services-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#services-section h1{
+    color: white;
+    font-weight: bold;
+}
+.services-card-container{
+    display: grid;
+    margin: 20px 40px;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+.services-card{
+    background-color: var(--text-and-btn-color);
+    padding: 40px 40px;
+    border-radius: 20px;
+    transition: 0.3s ease-in-out;
+}
+.services-card:hover{
+    background-color: white;
+    color: var(--text-and-btn-color);
+    transform: scale(1.06);
+}
+.services-card h3{
+    max-lines: 1;
+    margin-bottom: 10px;
+}
+.services-card h6{
+    max-lines: 5;
+    list-style: none;
+}
+
+/* STYLING CONTACT SECTION */
+
+#Contact-section{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+#Contact-section h1{
+    color: white;
+    margin-bottom: 20px;
+    
+}
+#Contact-section span{
+    color: var(--text-and-btn-color);
+}
+.inputs-section{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 20px;
+    width: 30%;
+}
+.inputs-section input, .inputs-section textarea{
+    background-color: var(--bg-color);
+    border: 2px solid var(--text-and-btn-color);
+    border-radius: 20px;
+    padding: 15px;
+    box-shadow: 0 0 0px var(--text-and-btn-color);
+    transition: 0.3s ease-in-out;
+    color: white;
+}
+.inputs-section input:hover, .inputs-section textarea:hover{
+    box-shadow: 0 0 20px var(--text-and-btn-color);
+}

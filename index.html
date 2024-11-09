@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio</title>
+
+    <!-- Google founts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- icon link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h3 class="text-titlt">Zakir <span>Dar</span></h3>
+        <nav>
+            <ul>
+                <li><a href="#about-section">About</a></li>
+                <li><a href="#services-section">Services</a></li>
+                <li><a href="#Contact-section">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="Home">
+        <section class="left-section">
+            <div>
+                <h2 class="my-name">It's <span>Zakir</span></h2>
+                <h4 class="my-passion">I'm a <span id="element"></span></h4>
+                <h6 class="my-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam illum quod
+                    quia quas error quasi
+                    dolore tempore odio recusandae voluptas excepturi, modi nostrum est reiciendis expedita, incidunt
+                    deserunt nam? Quasi vero debitis fuga. Nesciunt ea quidem quae placeat neque, expedita ratione
+                    perspiciatis, rerum maxime inventore accusantium quaerat error quia corporis.</h6>
+                <div class="socialmedia-icons">
+                    <a href="">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-figma"></i>
+                    </a>
+                </div>
+                <button class="contact-us-button">Contact US</button>
+            </div>
+        </section>
+        <section class="right-section">
+            <div class="image-div">
+                <img src="images/my-logo-image.png" alt="">
+            </div>
+        </section>
+    </main>
+
+    <!-- ABOUT SECTION/PAGE -->
+    <section id="about-section">
+        <div class="right-div-about">
+            <div class="image-div-about">
+                <img src="images/my-logo-image.png" alt="">
+            </div>
+        </div>
+        <div class="left-div">
+            <h1>About <span>Me</span></h1>
+            <h4><span id="element2"></span></h4>
+            <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae explicabo veritatis eum animi at cum
+                consectetur harum culpa dolor eius quaerat totam saepe dolorum, quam vitae corporis, doloribus error
+                quod amet! Atque in tempora molestiae quisquam maiores doloribus quae neque.</h6>
+            <button>Button</button>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section id="services-section">
+        <h1>Services</h1>
+        <div class="services-card-container">
+            <div class="services-card">
+                <h3>Graphics Design</h3>
+                <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non accusamus rem eveniet nihil, sit
+                    praesentium consequuntur voluptates eaque? Atque, nobis.</h6>
+            </div>
+            <div class="services-card">
+                <h3>Graphics Design</h3>
+                <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non accusamus rem eveniet nihil, sit
+                    praesentium consequuntur voluptates eaque? Atque, nobis.</h6>
+            </div>
+            <div class="services-card">
+                <h3>Graphics Design</h3>
+                <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non accusamus rem eveniet nihil, sit
+                    praesentium consequuntur voluptates eaque? Atque, nobis.</h6>
+            </div>
+            <div class="services-card">
+                <h3>Graphics Design</h3>
+                <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non accusamus rem eveniet nihil, sit
+                    praesentium consequuntur voluptates eaque? Atque, nobis.</h6>
+            </div>
+            <div class="services-card">
+                <h3>Graphics Design</h3>
+                <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non accusamus rem eveniet nihil, sit
+                    praesentium consequuntur voluptates eaque? Atque, nobis.</h6>
+            </div>
+            <div class="services-card">
+                <h3>Graphics Design</h3>
+                <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non accusamus rem eveniet nihil, sit
+                    praesentium consequuntur voluptates eaque? Atque, nobis.</h6>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="Contact-section">
+        <h1>Contact <span>Me</span></h1>
+        <div class="inputs-section">
+            <input type="text" id="fullname" placeholder="Full Name">
+            <input type="email" id="email" placeholder="Email">
+            <input type="number" id="phonenumber" placeholder="Phone Number">
+            <input type="text" id="subject" placeholder="Subject">
+            <textarea id="your-message" name="your-message" rows="10" cols="50" placeholder="Your Message"></textarea>
+        </div>
+    </section>
+
+    <!-- animation for text -->
+    <!-- <span id="element"></span> -->
+
+    <!-- Load library from the CDN -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web developer', 'Android App Developer', "content creator", "And also a Gamer..."],
+            typeSpeed: 50,
+        });
+        var typed = new Typed('#element2', {
+            strings: ['Web developer', 'Android App Developer', "content creator", "And also a Gamer..."],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
