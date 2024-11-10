@@ -24,11 +24,12 @@
     <header>
         <h3 class="text-titlt">Zakir <span>Dar</span></h3>
         <nav>
-            <ul>
+            <ul class="nav-links">
                 <li><a href="#about-section">About</a></li>
                 <li><a href="#services-section">Services</a></li>
                 <li><a href="#Contact-section">Contact</a></li>
             </ul>
+            <div class="menu-icon" onclick="toggleMenu()" style="color: white;">&#9776;</div>
         </nav>
     </header>
 
@@ -139,15 +140,8 @@
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
     <!-- Setup and start animation! -->
-    <script>
-        var typed = new Typed('#element', {
-            strings: ['Web developer', 'Android App Developer', "content creator", "And also a Gamer..."],
-            typeSpeed: 50,
-        });
-        var typed = new Typed('#element2', {
-            strings: ['Web developer', 'Android App Developer', "content creator", "And also a Gamer..."],
-            typeSpeed: 50,
-        });
+    <script src="javascript.js">
+       
     </script>
 </body>
 

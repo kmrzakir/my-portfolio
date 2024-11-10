@@ -77,6 +77,35 @@ header nav ul li a {
 nav ul li:hover {
     transform: scale(1.2);
 }
+.menu-icon{
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* RESPONVCE NAVIGATIN */
+@media (max-width: 300px){
+    nav ul{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        right: 10px;
+        top: 50px;
+        background-color: var(--bg-color);
+        border: 2px solid var(--text-and-btn-color);
+        color: white;
+        height: 300px;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .menu-icon {
+        display: block;
+    }
+    .nav-links.show{
+        display: flex;
+    }
+}
+
 
 /* Put here hover effects on a tags */
 header nav ul li a:hover {
@@ -122,6 +151,7 @@ main section div {
 
 .my-passion {
     color: white;
+    white-space: nowrap;
 }
 
 .my-passion span {
@@ -133,6 +163,22 @@ main section div {
     margin: 10px 0px;
     text-align: justify;
     line-height: 2cap0px;
+    width: 100%;
+}
+
+@media(max-width : 528px){
+    #Home{
+        flex-direction: column;
+        align-items: center;
+    }
+    .right-section {
+        order: -1; /* Ensures image stays on top */
+    }
+
+    .left-section {
+        order: 1;
+    }
+   
 }
 
 /* style social media icons here */
@@ -204,6 +250,26 @@ main section div {
     width: 100%;
     height: 100%;
     position: absolute;
+}
+
+@media(max-width : 859px){
+    .right-section{
+        width: 40%;
+        margin-right: 30px;
+    }
+    .image-div{
+        width: 300px;
+        height: 300px;
+    }
+}
+@media(max-width : 723px){
+    .image-div{
+        width: 250px;
+        height: 250px;
+    }
+    .socialmedia-icons{
+        width: 100%;
+    }
 }
 
 /* STYLING ABOUT SECTION HERE */
